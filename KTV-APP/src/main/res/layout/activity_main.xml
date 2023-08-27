@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="com.zhuchao.android.ktv.activity.MainActivity">
+
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_title_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxWidth="305dp"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/vip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/cl_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:maxWidth="120dp"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="false"
+            android:gravity="start|center"
+            android:text="@string/app_title_name"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            tools:ignore="ContentDescription" />
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_ad_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxWidth="305dp"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toRightOf="@+id/cl_title_logo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:maxWidth="280dp"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text="开通VIP   燃爆九月，会员首月仅16元 点击开通"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/vip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <com.zhuchao.android.ktv.widgets.ScaleTextView
+        android:id="@+id/tv_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:drawableStart="@drawable/gift"
+        android:gravity="center|start"
+        android:nextFocusDown="@+id/hg_title"
+        android:paddingStart="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="新人礼包"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@+id/cl_ad_msg"
+        app:layout_constraintTop_toTopOf="@+id/cl_ad_msg" />
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toRightOf="@+id/tv_ad"
+        app:layout_constraintTop_toTopOf="@+id/tv_ad">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="已安装应用"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toRightOf="@+id/cl_search"
+        app:layout_constraintTop_toTopOf="@+id/cl_search">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="历史"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/history"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toRightOf="@+id/cl_history"
+        app:layout_constraintTop_toTopOf="@+id/cl_history">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="登录"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <com.zhuchao.android.ktv.widgets.ScaleConstraintLayout
+        android:id="@+id/cl_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/selector_focus_bg_corner15_without_default_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/hg_title"
+        app:layout_constraintLeft_toRightOf="@+id/cl_login"
+        app:layout_constraintTop_toTopOf="@+id/cl_login">
+
+        <ImageView
+            android:id="@+id/iv_network"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/no_net"
+            tools:ignore="ContentDescription" />
+    </com.zhuchao.android.ktv.widgets.ScaleConstraintLayout>
+
+    <TextClock
+        android:id="@+id/tp_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:format12Hour="hh:mm"
+        android:text="12:00"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:gravity="start|center"
+        android:theme="@style/MyTimePicker"
+        app:layout_constraintBottom_toBottomOf="@+id/cl_login"
+        app:layout_constraintLeft_toRightOf="@+id/cl_net" />
+
+
+    <com.zhuchao.android.ktv.widgets.TabHorizontalGridView
+        android:id="@+id/hg_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="67dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        app:focusOutEnd="true"
+        app:focusOutFront="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/id_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_ad,cl_net,tp_time,cl_title_logo,cl_ad_msg,cl_login,cl_history,cl_search,hg_title" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

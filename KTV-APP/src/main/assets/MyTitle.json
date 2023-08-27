@@ -1,0 +1,61 @@
+﻿{
+  "code": 200,
+  "totalCount": 21,
+  "data": [
+    {
+      "id": 1113,
+      "tabCode": "7359d189a049468d9d4e280fd1ec15c5",
+      "name": "电视",
+      "icon": ""
+    },
+    {
+      "id": 1112,
+      "tabCode": "7412804a6aa24ca9be25fd8cd26f1995",
+      "name": "电影",
+      "icon": ""
+    },
+    {
+      "id": 1136,
+      "tabCode": "b9c9229ef6534682919d7af67438e4d6",
+      "name": "想唱就唱",
+      "icon": ""
+    },
+    {
+      "id": 1125,
+      "tabCode": "9a5fd09ddfa64c4b95b3dc02b27c7576",
+      "name": "我是歌神",
+      "icon": ""
+    },
+    {
+      "id": 1095,
+      "tabCode": "5f6874e8106e41a680e05fe49fe4a198",
+      "name": "拼音点歌",
+      "icon": ""
+    },
+    {
+      "id": 1030,
+      "tabCode": "50e4dfe685a84f929ba08952d6081877",
+      "name": "歌星点歌",
+      "icon": ""
+    },
+    {
+      "id": 1103,
+      "tabCode": "c4a72503d2374b188cf74767f2276220",
+      "name": "主题点歌",
+      "icon": ""
+    },
+
+    {
+      "id": 1114,
+      "tabCode": "c40248cac1f44c278f8bd23a0bba8b4f",
+      "name": "我的任务",
+      "icon": ""
+    },
+    {
+      "id": 1114,
+      "tabCode": "c40248cac1f44c278f8bd23a0bba8b4f",
+      "name": "我的收藏",
+      "icon": ""
+    }
+  ]
+}
